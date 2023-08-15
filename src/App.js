@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
-import { Button, Container, Form, FormGroup } from "react-bootstrap";
+import { Button, Container, Form, FormGroup, FormText } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 
 function App() {
@@ -31,6 +31,9 @@ function App() {
             <Form.Check {...register("remember")} type="checkbox" label="Remember me" />
           </Form.Group>
         </FormGroup>
+        <Form.Group>
+          <Form.Text>{data}</Form.Text>
+        </Form.Group>
         <Button type="submit" className="btn-dark">Submit</Button>
       </Form>
     </Container>
